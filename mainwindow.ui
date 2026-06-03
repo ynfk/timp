@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>950</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Андреев Артем 251-351 - Тема №17</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_main">
+    <item>
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      
+      <!-- Страница 0: Вход -->
+      <widget class="QWidget" name="pageLogin">
+       <layout class="QVBoxLayout" name="verticalLayout_login">
+        <item>
+         <widget class="QLabel" name="labelTitle">
+          <property name="font">
+           <font>
+            <pointsize>24</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>🔐 Андреев Артем 251-351</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelSubtitle">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Triple DES | SHA-256 | Интерполяция сплайнами | Градиентный спуск</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacerTop">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBoxLogin">
+          <property name="title">
+           <string>Вход в систему</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_loginFields">
+           <item>
+            <widget class="QLineEdit" name="lineEditLogin">
+             <property name="minimumSize">
+              <size>
+               <width>250</width>
+               <height>35</height>
+              </size>
+             </property>
+             <property name="placeholderText">
+              <string>Логин</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEditPassword">
+             <property name="minimumSize">
+              <size>
+               <width>250</width>
+               <height>35</height>
+              </size>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Password</enum>
+             </property>
+             <property name="placeholderText">
+              <string>Пароль</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="labelConnectionStatus">
+          <property name="text">
+           <string>Подключение...</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_buttons">
+          <item>
+           <spacer name="horizontalSpacerLeft">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnRegister">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Регистрация</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnLogin">
+            <property name="minimumSize">
+             <size>
+              <width>120</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Войти</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacerRight">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacerBottom">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      
+      <!-- Страница 1: Регистрация -->
+      <widget class="QWidget" name="pageRegister">
+       <layout class="QVBoxLayout" name="verticalLayout_register">
+        <item>
+         <widget class="QLabel" name="labelRegTitle">
+          <property name="font">
+           <font>
+            <pointsize>20</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Регистрация нового пользователя</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacerRegTop">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>30</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBoxRegister">
+          <property name="title">
+           <string>Информация</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_regFields">
+           <item>
+            <widget class="QLineEdit" name="lineEditRegLogin">
+             <property name="minimumSize">
+              <size>
+               <width>250</width>
+               <height>35</height>
+              </size>
+             </property>
+             <property name="placeholderText">
+              <string>Логин</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEditRegPassword">
+             <property name="minimumSize">
+              <size>
+               <width>250</width>
+               <height>35</height>
+              </size>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Password</enum>
+             </property>
+             <property name="placeholderText">
+              <string>Пароль (минимум 4 символа)</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="lineEditRegConfirm">
+             <property name="minimumSize">
+              <size>
+               <width>250</width>
+               <height>35</height>
+              </size>
+             </property>
+             <property name="echoMode">
+              <enum>QLineEdit::Password</enum>
+             </property>
+             <property name="placeholderText">
+              <string>Подтверждение пароля</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_regButtons">
+          <item>
+           <spacer name="horizontalSpacerRegLeft">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnBackToLogin">
+            <property name="minimumSize">
+             <size>
+              <width>100</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Назад</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnSubmitRegister">
+            <property name="minimumSize">
+             <size>
+              <width>140</width>
+              <height>35</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Зарегистрироваться</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacerRegRight">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="verticalSpacerRegBottom">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>30</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+      
+      <!-- Страница 2: Главное окно -->
+      <widget class="QWidget" name="pageMain">
+       <layout class="QVBoxLayout" name="verticalLayout_mainPage">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_userInfo">
+          <item>
+           <widget class="QLabel" name="labelUserInfo">
+            <property name="font">
+             <font>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Пользователь:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="labelCurrentUser">
+            <property name="styleSheet">
+             <string>color: #2196F3; font-weight: bold;</string>
+            </property>
+            <property name="text">
+             <string>Не авторизован</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacerUser">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnLogout">
+            <property name="text">
+             <string>Выйти</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        
+        <item>
+         <widget class="QTabWidget" name="tabWidget">
+          
+          <!-- Вкладка 0: SHA-256 -->
+          <widget class="QWidget" name="tabSha256">
+           <attribute name="title">
+            <string>🔐 SHA-256</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_sha">
+            <item>
+             <widget class="QLabel" name="labelShaInput">
+              <property name="font">
+               <font>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Введите текст для хэширования:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTextEdit" name="textEditShaInput">
+              <property name="placeholderText">
+               <string>Введите текст...</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnSha256">
+              <property name="text">
+               <string>Вычислить SHA-256</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelShaOutput">
+              <property name="font">
+               <font>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Результат:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTextEdit" name="textEditShaOutput">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+              <property name="font">
+               <font>
+                <family>Monospace</family>
+               </font>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          
+          <!-- Вкладка 1: Сплайн интерполяция -->
+          <widget class="QWidget" name="tabSpline">
+           <attribute name="title">
+            <string>📈 Интерполяция сплайнами</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_spline">
+            <item>
+             <widget class="QGroupBox" name="groupBoxSplineInput">
+              <property name="title">
+               <string>Входной файл (CSV: x,y)</string>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_splineInput">
+               <item>
+                <widget class="QLineEdit" name="lineEditSplineInput"/>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btnBrowseSplineInput">
+                 <property name="text">
+                  <string>Обзор...</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="groupBoxSplineOutput">
+              <property name="title">
+               <string>Выходной файл (CSV)</string>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_splineOutput">
+               <item>
+                <widget class="QLineEdit" name="lineEditSplineOutput"/>
+               </item>
+               <item>
+                <widget class="QPushButton" name="btnBrowseSplineOutput">
+                 <property name="text">
+                  <string>Сохранить...</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnSplineInterpolate">
+              <property name="text">
+               <string>Выполнить интерполяцию</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelSplineInfo">
+              <property name="text">
+               <string>💡 Формат CSV: x,y (одна точка на строку, первая строка - заголовок)</string>
+              </property>
+              <property name="styleSheet">
+               <string>color: gray;</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          
+          <!-- Вкладка 2: Градиентный спуск -->
+          <widget class="QWidget" name="tabGradientDescent">
+           <attribute name="title">
+            <string>📉 Градиентный спуск</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_gd">
+            <item>
+             <widget class="QLabel" name="labelGDFunction">
+              <property name="font">
+               <font>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Функция для минимизации:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboGDFunction">
+              <item>
+               <property name="text">
+                <string>f(x) = x² (минимум в 0)</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>f(x) = x³ - 2x² + x (минимум ~0.33)</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelGDStartX">
+              <property name="text">
+               <string>Начальная точка X:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxStartX">
+              <property name="minimum">
+               <double>-100.0</double>
+              </property>
+              <property name="maximum">
+               <double>100.0</double>
+              </property>
+              <property name="value">
+               <double>5.0</double>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelGDLearningRate">
+              <property name="text">
+               <string>Скорость обучения:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QDoubleSpinBox" name="doubleSpinBoxLearningRate">
+              <property name="minimum">
+               <double>0.001</double>
+              </property>
+              <property name="maximum">
+               <double>1.0</double>
+              </property>
+              <property name="singleStep">
+               <double>0.01</double>
+              </property>
+              <property name="value">
+               <double>0.01</double>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnGradientDescent">
+              <property name="text">
+               <string>Найти минимум</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="labelGDOutput">
+              <property name="font">
+               <font>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Результат:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTextEdit" name="textEditGDOutput">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+              <property name="font">
+               <font>
+                <family>Monospace</family>
+               </font>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          
+          <!-- Вкладка 3: Админ-панель -->
+          <widget class="QWidget" name="tabAdmin">
+           <attribute name="title">
+            <string>👑 Админ-панель</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_admin">
+            <item>
+             <widget class="QLabel" name="labelAdminInfo">
+              <property name="text">
+               <string>⚠️ Только для администраторов</string>
+              </property>
+              <property name="styleSheet">
+               <string>color: red; font-weight: bold;</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_admin">
+              <item>
+               <widget class="QLabel" name="labelSortBy">
+                <property name="text">
+                 <string>Сортировка:</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QComboBox" name="comboSortBy">
+                <item>
+                 <property name="text">
+                  <string>по логину</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>по роли</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="btnListUsers">
+                <property name="text">
+                 <string>Показать пользователей</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <widget class="QTextEdit" name="textEditUsersList">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+              <property name="font">
+               <font>
+                <family>Monospace</family>
+               </font>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          
+          <!-- Вкладка 4: История -->
+          <widget class="QWidget" name="tabHistory">
+           <attribute name="title">
+            <string>📜 История операций</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_history">
+            <item>
+             <widget class="QTableWidget" name="tableHistory">
+              <property name="editTriggers">
+               <set>QAbstractItemView::NoEditTriggers</set>
+              </property>
+              <property name="alternatingRowColors">
+               <bool>true</bool>
+              </property>
+              <property name="selectionBehavior">
+               <enum>QAbstractItemView::SelectRows</enum>
+              </property>
+              <property name="columnCount">
+               <number>3</number>
+              </property>
+              <column>
+               <property name="text">
+                <string>Время</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Действие</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Результат</string>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+        
+        <item>
+         <widget class="QGroupBox" name="groupBoxOutput">
+          <property name="title">
+           <string>Вывод сервера</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_output">
+           <item>
+            <widget class="QTextEdit" name="textEditOutput">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+             <property name="styleSheet">
+              <string>background-color: #1e1e1e; color: #d4d4d4; font-family: monospace;</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

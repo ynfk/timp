@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  server:
+    build: .
+    container_name: stegoapp-server
+    ports:
+      - "33333:33333"
+    restart: unless-stopped
