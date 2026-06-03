@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['локально_0',['Локально',['../index.html#autotoc_md3',1,'']]]
+  ['структура_0',['📁 Структура',['../index.html#autotoc_md6',1,'']]]
 ];

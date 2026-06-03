@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['команды_0',['📡 Команды',['../index.html#autotoc_md8',1,'']]]
+  ['структура_0',['📁 Структура',['../index.html#autotoc_md6',1,'']]]
 ];

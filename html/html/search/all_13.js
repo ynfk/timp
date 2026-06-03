@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['запуск_0',['🚀 Запуск',['../index.html#autotoc_md2',1,'']]]
+  ['команды_0',['📡 Команды',['../index.html#autotoc_md4',1,'']]]
 ];

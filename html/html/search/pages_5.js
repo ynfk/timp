@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['запуск_0',['🚀 Запуск',['../index.html#autotoc_md2',1,'']]]
+  ['локально_0',['Локально',['../index.html#autotoc_md3',1,'']]]
 ];
