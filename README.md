@@ -21,14 +21,6 @@ cmake .. && make -j4
 ./client
 ```
 
-### Docker
-
-```bash
-docker run -d -p 33333:33333 --name stegoapp andreev251/stegoapp-server:latest
-```
-
----
-
 ## 📡 Команды
 
 | Команда | Пример |
